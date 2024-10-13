@@ -53,8 +53,8 @@ El proyecto sigue una estructura clara y organizada para facilitar su comprensi�
 
 ### 1️⃣ Clona el repositorio:
 ```bash
-git clone https://github.com/tu_usuario/proyecto-gestor-finanzas.git
-cd proyecto-gestor-finanzas
+git clone https://github.com/Sebastian0946/GestorFinanciero.git
+cd GestorFinanciero
 ```
 
 ### 2️⃣ Configura la base de datos:
@@ -79,7 +79,7 @@ composer require filp/whoops
 ### 5️⃣ Ejecuta la aplicación:
 Abre tu navegador favorito y dirígete a:
 ```
-http://localhost/proyecto-gestor-finanzas/index.php
+http://localhost/GestorFinanciero/index.php
 ```
 
 ---
