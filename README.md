@@ -13,27 +13,50 @@ El **Gestor de Finanzas** es una aplicación web diseñada para ayudar a los usu
 ## Estructura del Proyecto
 El proyecto está organizado de la siguiente manera:
 
-/proyecto-gestor-finanzas │ ├── /app │ ├── /controllers # Controladores de la aplicación │ ├── /models # Modelos que gestionan la base de datos │ ├── /views # Vistas de la aplicación │ └── /routes # Rutas de la API │ ├── /assets # Archivos estáticos (CSS, JS, imágenes) │ ├── index.php # Punto de entrada de la aplicación │ └── README.md # Documentación del proyecto
-
-## Tecnologías Utilizadas
-- **PHP**: Lenguaje de programación utilizado para la lógica del servidor y el manejo de la base de datos.
-- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar la información de usuarios, ingresos y gastos.
-- **JavaScript**: Utilizado para la interacción en el lado del cliente y para generar gráficos mediante bibliotecas como ApexCharts.
-- **HTML/CSS**: Tecnologías fundamentales para la estructura y el diseño de la interfaz de usuario.
-- **jQuery**: Biblioteca de JavaScript que facilita la manipulación del DOM y las solicitudes AJAX.
+```
+/proyecto-gestor-finanzas
+│
+├── /app
+│   ├── /controllers  # Controladores de la aplicación
+│   ├── /models       # Modelos que gestionan la base de datos
+│   ├── /views        # Vistas de la aplicación
+│   └── /routes       # Rutas de la API
+│
+├── /assets
+│   └── /librerias    # Librerías externas, donde se debe ejecutar Composer
+│
+├── index.php         # Punto de entrada de la aplicación
+│
+└── README.md         # Documentación del proyecto
+```
 
 ## Instalación
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/tu_usuario/proyecto-gestor-finanzas.git
-   cd proyecto-gestor-finanzas
 
-   Configura la base de datos:
+### Requisitos
+Antes de iniciar, asegúrate de tener los siguientes requisitos instalados:
+- **PHP** 7.4 o superior
+- **MySQL** o **MariaDB**
+- **Composer**
 
-Crea una base de datos en MySQL y ejecuta los scripts de creación de tablas que se encuentran en la carpeta database/.
-Configura el entorno:
+### 1. Clona el repositorio:
+```bash
+git clone https://github.com/tu_usuario/proyecto-gestor-finanzas.git
+cd proyecto-gestor-finanzas
+```
 
+### 2. Configura la base de datos:
+- Crea una base de datos en MySQL y ejecuta los scripts de creación de tablas que se encuentran en la carpeta `database/`.
+
+### 3. Instala las dependencias necesarias:
+Dentro de la carpeta `assets/librerias/`, ejecuta el siguiente comando para instalar la librería **filp/whoops**, que es utilizada para el manejo de errores en el proyecto:
+
+```bash
+cd assets/librerias
+composer require filp/whoops
+```
+
+### 4. Configura el entorno:
 Asegúrate de que tu servidor web esté configurado para ejecutar PHP y que tenga acceso a la base de datos.
-Ejecuta la aplicación:
 
-Abre tu navegador y dirígete a http://localhost/proyecto-gestor-finanzas/index.php.
+### 5. Ejecuta la aplicación:
+Abre tu navegador y dirígete a `http://localhost/proyecto-gestor-finanzas/index.php`.
