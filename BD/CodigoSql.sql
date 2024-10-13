@@ -1,0 +1,42 @@
+-- Inserción de datos de gastos
+INSERT INTO gastos (id_usuario, id_categoria, descripcion, monto, motivo, fecha) VALUES
+(24, 4, 'Compra de frutas', 15000.00, 'Compra mensual de frutas', '2024-05-05'),
+(24, 4, 'Compra de verduras', 12000.00, 'Compra mensual de verduras', '2024-05-10'),
+(24, 5, 'Almuerzo en restaurante', 25000.00, 'Almuerzo de trabajo', '2024-05-15'),
+(24, 5, 'Cena familiar', 30000.00, 'Cena con la familia', '2024-05-20'),
+(24, 6, 'Compra de productos de limpieza', 8000.00, 'Compra para el hogar', '2024-05-25'),
+(24, 4, 'Compra de carne', 20000.00, 'Compra mensual de carne', '2024-06-05'),
+(24, 4, 'Compra de lácteos', 18000.00, 'Compra de lácteos', '2024-06-10'),
+(24, 5, 'Cenando fuera', 30000.00, 'Cena con amigos', '2024-06-15'),
+(24, 5, 'Gas para cocina', 9000.00, 'Recarga de gas', '2024-06-20'),
+(24, 6, 'Suscripción a gimnasio', 40000.00, 'Pago mensual', '2024-06-25'),
+(24, 6, 'Compra de juguetes', 7000.00, 'Regalo para el niño', '2024-07-05'),
+(24, 6, 'Alquiler de películas', 15000.00, 'Películas para ver en casa', '2024-07-10'),
+(24, 7, 'Almuerzo de trabajo', 25000.00, 'Almuerzo con clientes', '2024-07-15'),
+(24, 7, 'Gastos de transporte', 10000.00, 'Transporte público', '2024-07-20'),
+(24, 7, 'Cuidado personal', 6000.00, 'Visita a la peluquería', '2024-08-05'),
+(24, 7, 'Compra de libros', 12000.00, 'Libros para el estudio', '2024-08-10'),
+(24, 5, 'Mantenimiento de auto', 30000.00, 'Revisión mecánica', '2024-08-15'),
+(24, 5, 'Suscripción a servicio de streaming', 10000.00, 'Entretenimiento mensual', '2024-08-20'),
+(24, 4, 'Gastos de escolaridad', 60000.00, 'Libros y útiles escolares', '2024-09-25'),
+(24, 6, 'Alquiler de equipo de camping', 50000.00, 'Salida de fin de semana', '2024-09-05'),
+(24, 6, 'Compra de ropa', 150000.00, 'Ropa de verano', '2024-09-10'),
+(24, 5, 'Gastos de vacaciones', 1200000.00, 'Vacaciones familiares', '2024-09-15');
+
+-- Inserción de datos de ingresos
+INSERT INTO ingresos (id_usuario, id_categoria, descripcion, monto, motivo, fecha) VALUES
+(24, 1, 'Salario Mensual', 3000000.00, 'Pago mensual de salario', '2024-05-01'),
+(24, 1, 'Bono de productividad', 500000.00, 'Bono por objetivos cumplidos', '2024-05-10'),
+(24, 2, 'Venta de artículos en línea', 150000.00, 'Venta de artículos usados', '2024-05-15'),
+(24, 1, 'Salario Mensual', 3000000.00, 'Pago mensual de salario', '2024-06-01'),
+(24, 3, 'Reembolso de gastos de viaje', 80000.00, 'Reembolso por gastos de viaje de trabajo', '2024-06-10'),
+(24, 2, 'Ingreso por freelance', 600000.00, 'Proyecto freelance', '2024-06-20'),
+(24, 1, 'Salario Mensual', 3000000.00, 'Pago mensual de salario', '2024-07-01'),
+(24, 1, 'Bono de vacaciones', 1000000.00, 'Bono por vacaciones', '2024-07-05'),
+(24, 3, 'Devolución de impuestos', 120000.00, 'Reembolso por impuestos pagados en exceso', '2024-07-15'),
+(24, 1, 'Salario Mensual', 3000000.00, 'Pago mensual de salario', '2024-08-01'),
+(24, 2, 'Venta de vehículo usado', 2500000.00, 'Venta de automóvil usado', '2024-08-10'),
+(24, 1, 'Bono por desempeño', 750000.00, 'Bono por desempeño laboral', '2024-08-15'),
+(24, 1, 'Salario Mensual', 3000000.00, 'Pago mensual de salario', '2024-09-01'),
+(24, 3, 'Reembolso de seguro médico', 50000.00, 'Reembolso por gastos médicos', '2024-09-10'),
+(24, 2, 'Ingreso por alquiler', 200000.00, 'Ingreso por renta de propiedad', '2024-09-15');

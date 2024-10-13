@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a); /* Gradiente de gris oscuro a gris medio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra un poco más pronunciada */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Estilo de hover en los enlaces */
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fecd02 !important;
+}
+
+.dropdown a i {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-right: 8px; /* Espacio entre el ícono y el nombre */
+}
+
+.dropdown a span {
+    color: #ffffff; /* Color blanco para el nombre del usuario */
+}
+
+/* Botón colapsable (versión móvil) */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.7%29" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Estilos para el contenedor de la barra de navegación */
+.container-fluid {
+    padding: 0;
+}
+
+/* Ajustes para el contenido principal */
+#content {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#content-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,293 @@
+/* Estilos personalizados */
+/* Estilos para el video de fondo */
+#backgroundVideo {
+    position: fixed; /* Fijar el video en la posición */
+    top: 0; /* Parte superior */
+    left: 0; /* Parte izquierda */
+    min-width: 100%; /* Ancho mínimo */
+    min-height: 100%; /* Altura mínima */
+    z-index: -1; /* Video detrás de otros elementos */
+    object-fit: cover; /* Cubrir toda la pantalla */
+    filter: brightness(0.7); /* Oscurecer un poco el video */
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía */
+    color: #fff; /* Color del texto */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+}
+
+/* Estilos adicionales para la contenedor de las tarjetas */
+.container {
+    position: relative; /* Asegura que el z-index funcione */
+    z-index: 1; /* Elemento encima del video */
+}
+
+.container-custom {
+    margin-top: 5px;
+}
+
+.card-custom {
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Sombra de la tarjeta */
+    background: linear-gradient(135deg, #fecd02, #0056b3); /* Fondo en degradado */
+    color: #fff; /* Color del texto */
+    margin: 5px; /* Margen entre tarjetas */
+    padding: 10px; /* Espaciado interno */
+    height: 150px; /* Altura de las tarjetas */
+    position: relative; /* Para el z-index */
+    overflow: hidden; /* Ocultar contenido que sobresale */
+}
+
+/* Iconos */
+.card-custom i {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Encabezados */
+.card-header-custom {
+    background: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Ajustes en el cuerpo de la tarjeta */
+.card-body-custom {
+    padding: 10px 0;
+}
+
+/* Cambia el tamaño de la fuente del encabezado y del cuerpo */
+.card-body-custom h5 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.card-body-custom p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Estilos flexibles para las columnas */
+.row-custom {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.col-custom {
+    flex: 1 1 220px;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 100%;
+}
+
+/* Ajuste de la tabla */
+.table-custom {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera de la tabla */
+.table-custom thead th {
+    background-color: #3a3f51;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+/* Celdas del cuerpo de la tabla */
+.table-custom tbody td {
+    padding: 8px 10px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #555;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el cursor por una fila */
+.table-custom tbody tr:hover {
+    background-color: #f1f3f5;
+    transform: scale(1.01);
+}
+
+/* Alternar colores de las filas */
+.table-custom tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Bordes */
+.table-custom th,
+.table-custom td {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Paginación */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background-color: #3a3f51;
+    /* Fondo oscuro */
+    color: #ffffff !important;
+    /* Texto blanco */
+    border: 1px solid #3a3f51;
+    /* Borde del mismo color que el fondo */
+    margin: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #5b657a;
+    /* Fondo más claro al pasar el cursor */
+    color: #ffffff !important;
+    /* Texto blanco en hover */
+    border: 1px solid #5b657a;
+    /* Cambia el borde al color del fondo hover */
+}
+
+/* Controles de longitud y filtrado */
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+    background-color: #f5f5f5;
+    /* Fondo claro para selectores y filtros */
+    border: 1px solid #ddd;
+    /* Borde gris claro */
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #3a3f51;
+    /* Borde oscuro al enfocar */
+}
+
+/* Limitar el ancho máximo de la tabla */
+.table-responsive {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar la tabla y margen */
+    z-index: 1; /* Asegura que la tabla esté encima del video */
+    position: relative; /* Para que el z-index funcione */
+}
+
+/* --------------------------- Modal -------------------- */
+
+/* Estilos para asegurar que los labels sean negros */
+.form-label {
+    color: #000000 !important;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Estilo para inputs y select */
+.form-control,
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    /* Fondo claro para destacar los inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #010168;
+    box-shadow: 0 0 5px rgba(1, 1, 104, 0.5);
+    /* Sombra azul suave */
+}
+
+/* Estilo específico para el textarea */
+textarea.form-control {
+    height: 100px;
+    resize: none;
+    /* Desactiva el redimensionamiento */
+}
+
+/* Ajustes adicionales para la modal */
+.modal-xl .modal-body {
+    padding: 30px;
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* Sombra sutil */
+}
+
+.modal-header {
+    background-color: #fecd02;
+    /* Azul corporativo */
+    color: #ffffff;
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 15px 20px;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #010168 !important;
+    /* Azul corporativo */
+    border-color: #010168 !important;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fecd02 !important;
+    /* Amarillo corporativo */
+    border-color: #fecd02 !important;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}

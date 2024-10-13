@@ -1,0 +1,107 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.finance-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0056b3, #00a86b, #0056b3);
+    z-index: -2;
+}
+
+.finance-icons {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.finance-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    /* Ajusta la opacidad a 0.7 para que sean menos transparentes */
+    animation: float 30s infinite linear;
+    /* Aumenta la duración a 30s */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0);
+    }
+
+    100% {
+        transform: translateY(-150vh) translateX(0);
+        /* Ajusta a -150vh para que los íconos suban más allá de la pantalla */
+    }
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1;
+}
+
+.card-header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+}
+
+.logo-finance {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.tab-content {
+    padding-top: 20px;
+}
+
+.currency-selector {
+    margin-bottom: 15px;
+}
