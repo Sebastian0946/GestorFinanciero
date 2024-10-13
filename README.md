@@ -26,7 +26,7 @@ El **Gestor de Finanzas** es una aplicación web desarrollada para ayudar a los 
 El proyecto sigue una estructura clara y organizada para facilitar su comprensión y mantenimiento:
 
 ```
-/proyecto-gestor-finanzas
+/GestorFinanciero
 │
 ├── /app
 │   ├── /controllers  # Controladores de la aplicación
