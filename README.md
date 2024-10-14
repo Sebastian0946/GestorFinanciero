@@ -68,6 +68,7 @@ Dentro de la carpeta `assets/librerias/`, ejecuta el siguiente comando para inst
 ```bash
 cd assets/librerias
 composer require filp/whoops
+composer require phpmailer/phpmailer
 ```
 
 ### 4️⃣ Configura el entorno:
